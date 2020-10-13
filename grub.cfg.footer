@@ -1,0 +1,15 @@
+### Please remove this file from your custom windows config dir if you don't want to make any *structural change.
+### This is what which will me merged at the bottom of `C:\grub2\grub.cfg` and the phrase `Android-x86-ASG` will be replaced with `NAME-VERSION`.
+### Also do not change the phrase `Android-x86-ASG` from this cfg, other customizations are okay. (The installer will auto-replace based on `NAME-VERSION`)
+
+
+#
+#  Sub Menu Entry       Android-x86-ASG
+#
+submenu   'Android-x86-ASG'  --class submenu --class icon-asg {
+     set gfxpayload=screenResolution
+     export gfxpayload
+     #
+     source $prefix/windata/customconfigs/Android-x86-ASG.cfg
+     #
+}
