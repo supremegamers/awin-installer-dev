@@ -4,6 +4,7 @@ If you just simply include the installer executable in your ISO root then that s
 The files in the repo are just to help swap the files which are already pre-packed with the installer, you don't have to essentially include these in your ISO if you don't want to change anything. But if you want to use custom icon, grub config, preset name-version and control how the installer should behave then this is for you.
 
 All you need is the `windows` folder from this repo at your ISO root.
+
 Below I will try to explain what each of the files are used for.
 
 ### config.ini
