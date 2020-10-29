@@ -3,12 +3,13 @@
 ### Also do not change the phrase `Android-x86-ASG` from this cfg, other customizations are okay. (The installer will auto-replace based on `NAME-VERSION`)
 
 
+
+
+
 #
 #  Sub Menu Entry       Android-x86-ASG
 #
 submenu   'Android-x86-ASG'  --class submenu --class icon-asg {
-     set gfxpayload=screenResolution
-     export gfxpayload
      #
      source $prefix/windata/customconfigs/Android-x86-ASG.cfg
      #
