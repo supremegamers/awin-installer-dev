@@ -1,0 +1,64 @@
+
+desktop-image: "background.png"
+
+title-text: ""
+message-font: "DejaVu Sans Regular 16"
+message-color: "#eff0f1"
+terminal-font: "DejaVu Sans Regular 16"
+terminal-box: "terminal_*.png"
+
+
++ progress_bar {
+  id = "__timeout__"
+  left = 20%
+  width = 60%
+  top = 85%
+  height = 31
+  show_text = false
+  text = ""
+  fg_color = "#3daee9"
+  bg_color = "#31363b"
+  border_color = "#31363b"
+  bar_style = "progress_bar_*.png"
+  highlight_style = "progress_highlight_*.png"
+}
+
++ boot_menu {
+  left = 20%
+  width = 60%
+  top = 20%
+  height = 70%
+
+  #menu_pixmap_style = "boot_menu_*.png"
+
+  item_font = "DejaVu Sans Regular 24"
+  item_color = "#eff0f1"
+  item_height = 55
+#  item_icon_space = 10
+  item_padding = 0
+  item_spacing = 55
+  
+ selected_item_font = "DejaVu Sans Regular 24"
+  selected_item_color= "#ffffff"
+  selected_item_color = "#ffffff"
+  selected_item_pixmap_style = "select_*.png"
+
+#  icon_height = 40
+#  icon_width = 40
+
+  scrollbar = false
+}
+
+# Show an informational message.
++ hbox {
+		top = 25
+		left = 15%
+		+ label {text = "Enter: " font = "Sans 12" color = "#ffff00" align = "left"}
+		+ label {text = "Boot Selection     " font = "Sans 12" color = "#ffffff" align = "left"}
+		+ label {text = "E: " font = "Sans 12" color = "#ffff00" align = "left"}
+		+ label {text = "Edit Selection     " font = "Sans 12" color = "#ffffff" align = "left"}
+		+ label {text = "C: " font = "Sans 12" color = "#ffff00" align = "left"}
+		+ label {text = "GRUB Commandline" font = "Sans 12" color = "#ffffff" align = "left"}
+}
+
+
